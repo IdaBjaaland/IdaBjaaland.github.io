@@ -1,0 +1,49 @@
+p{
+  background-color: lightpink;
+  padding-left: 40px;
+}
+
+h1{
+  background-color: black;
+}
+
+h1{
+  color: white;
+}
+
+p{
+  color: black;
+}
+
+
+ img{
+   border-width:4px;
+   border-color:black;
+   border-style: solid;
+   filter:drop-shadow(16px 16px 20px black);
+   margin: 75px;
+ }
+
+ul{
+  border: 3px solid black;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+}
+
+ul li{
+  display: inline;
+}
+
+ul a{
+  background-color: lightblue;
+  margin: 3px;
+  padding: 10px 30px;
+  color: #333333;
+  font-weight: none;
+  text-decoration: none;
+}
+
+ul a:hover{
+  background-color: yellow;
+}
