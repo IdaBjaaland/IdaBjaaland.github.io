@@ -1,0 +1,22 @@
+body{
+  background-color: lightpink;
+}
+
+p{
+  width: 300px;
+}
+
+img{
+  border-width:4px;
+  border-color:white;
+  border-style: solid;
+  filter:drop-shadow(16px 16px 20px black);
+  margin: 15px;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 5px;
+}
