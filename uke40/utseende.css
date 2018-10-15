@@ -1,0 +1,17 @@
+td{
+  background-color: lightblue;
+  padding: 7px 14px;
+  border: 2px solid pink;
+}
+table{
+  border-collapse;
+}
+th{
+  text-align: left;
+  padding: 7px 14px;
+  border: 2px solid pink;
+  border-bottom: 4px solid pink;
+}
+video{
+  width: 250px;
+}

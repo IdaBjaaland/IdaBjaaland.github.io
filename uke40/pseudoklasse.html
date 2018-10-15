@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pseudoklasser og pseudoselektorer</title>
+    <style media="screen">
+
+      img{
+        width: 300px;
+        transition: 1s;
+      }
+      #detFørsteBildet:hover{
+        width: 600px;
+        /*transform:scale(2)*/ /*<-her vil den øke til alle sider*/
+      }
+      #detAndreBildet:active{
+        transform:translateX(100px)
+      }
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <img id="detFørsteBildet" src="../uke38/bilder/jorden.jpg" alt="">
+    <img id="detAndreBildet" src="../uke38/bilder/jorden.jpg" alt="">
+  </body>
+</html>
