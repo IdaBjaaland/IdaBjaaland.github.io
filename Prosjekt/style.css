@@ -1,0 +1,39 @@
+body{
+  background-color: #FFEBCD;
+  font-family: sans-serif;
+}
+main{
+  max-width: 970px;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr)
+  grid-gap:10px;
+  grid-gap: 5px;
+  grid-auto-rows: minmax(50px, auto)
+
+}
+
+header{
+  display: grid;
+  grid-template-columns: 5fr 5fr 1fr 1fr 1fr 1fr;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 5fr 5fr 1fr 1fr 1fr 1fr;
+}
+
+.hoved{
+  grid-column: span 2;
+  grid-row:  span 2;
+  font-size: 30px;
+  width: 100px;
+}
+.liten{
+
+}
+.stor{
+  grid-column: span 3;
+  grid-row: span 3;
+}
