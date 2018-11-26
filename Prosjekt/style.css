@@ -1,29 +1,55 @@
 body{
   background-color: #FFEBCD;
-  font-family: sans-serif;
+  font-family: Arial;
+  margin: 0;
 }
 main{
   max-width: 970px;
   margin:auto;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr)
-  grid-gap:10px;
-  grid-gap: 5px;
-  grid-auto-rows: minmax(50px, auto)
-
+  margin-top: 100px;
 }
-
+section>a{
+  text-decoration: none;
+}
 header{
   display: grid;
-  grid-template-columns: 5fr 5fr 1fr 1fr 1fr 1fr;
-  background-color: white;
+  grid-template-columns: 4fr 4fr 7fr;
+  width: 100%;
+  background-color: #DEB887;
   position: fixed;
   top: 0;
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 5fr 5fr 1fr 1fr 1fr 1fr;
+}
+img{
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
 }
 
+ul li{
+  display: inline-block;
+}
+ul a{
+  background-color: lightblue;
+  margin: 3px;
+  padding: 10px 30px;
+  color: #333333;
+  font-weight: none;
+  text-decoration: none;
+}
+ul a:hover{
+  background-color: white;
+}
+Table th{
+  text-align: left;
+  background-color: #3a6070;
+  color: #FFF;
+  padding: 2px 4px 3px;
+}
+Table td{
+  border: 1px solid #e3e3e3;
+  padding: 4px 8px;
+}
 .hoved{
   grid-column: span 2;
   grid-row:  span 2;
@@ -36,4 +62,38 @@ header{
 .stor{
   grid-column: span 3;
   grid-row: span 3;
+}
+.bildegrid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(50px, auto);
+}
+.bildegrid img{
+  width: 100%;
+}
+.stor img{
+  width: 100%;
+}
+.nede{
+ background-color: #DEB887;
+ font-size: Arial;
+ grid-column: span 3;
+}
+.container {
+    position: relative;
+    font-family: Arial;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 6px;
+    right: 0px;
+    background-color: #FFEBCD;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.clearfix{
+  overflow: auto;
 }
