@@ -1,0 +1,20 @@
+h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 5rem;
+    color: #FFB6C1;
+    margin-top: 90px;
+    text-align: center;
+}
+@keyframes sharpenup {
+    to {
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
+h1 > span {
+    display: inline-block;
+    filter: blur(15px);
+    transform: scale(3);
+    animation: sharpenup 2s forwards;
+}

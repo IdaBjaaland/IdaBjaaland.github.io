@@ -42,13 +42,14 @@ ul a:hover{
 }
 Table th{
   text-align: left;
-  background-color: #3a6070;
+  background-color: black;
   color: #FFF;
   padding: 2px 4px 3px;
 }
 Table td{
-  border: 1px solid #e3e3e3;
+  border: 2px solid lightpink;
   padding: 4px 8px;
+  background-color: white;
 }
 .hoved{
   grid-column: span 2;
@@ -65,9 +66,9 @@ Table td{
 }
 .bildegrid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 3fr);
   grid-gap: 5px;
-  grid-auto-rows: minmax(50px, auto);
+  grid-auto-rows: minmax(100px, auto);
 }
 .bildegrid img{
   width: 100%;
