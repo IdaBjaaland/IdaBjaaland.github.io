@@ -79,7 +79,7 @@ Table td{
 .nede{
  background-color: #DEB887;
  font-size: Arial;
- grid-column: span 3;
+ width: 100%;
 }
 .container {
     position: relative;
