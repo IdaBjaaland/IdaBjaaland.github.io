@@ -19,6 +19,7 @@ header{
   position: fixed;
   top: 0;
   overflow: hidden;
+  z-index: 1;
 }
 img{
   border-width: 1px;
@@ -69,6 +70,8 @@ Table td{
   grid-template-columns: repeat(3, 3fr);
   grid-gap: 5px;
   grid-auto-rows: minmax(100px, auto);
+  max-width: 970px;
+  margin:auto;
 }
 .bildegrid img{
   width: 100%;
