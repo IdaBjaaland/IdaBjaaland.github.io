@@ -1,0 +1,15 @@
+{
+"kontaktliste":{
+    "1":{
+      "FirstName": "Ida Sjoli",
+      "LastName": "Bjaaland",
+      "Adress": "Rødskrubbgrenda 6",
+      "Object": {
+        "Mamma": "Kristin Bjaaland",
+        "Pappa": "John Sjoli",
+        "Bror": "Anders Sjoli Bjaaland"
+      },
+      "Telephone": 90716097
+      
+  }
+}
