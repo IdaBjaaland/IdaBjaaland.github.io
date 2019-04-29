@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Handlekurv</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAZatvG1MLQfoHz-izcASOqNoo0ei8NoZM",
+        authDomain: "teprosjekt.firebaseapp.com",
+        databaseURL: "https://teprosjekt.firebaseio.com",
+        projectId: "teprosjekt",
+        storageBucket: "",
+        messagingSenderId: "723521776"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <a href="index.html">
+      <img src="bilder/te.png" alt="te logo" class="center">
+    </a>
+  <header>
+    <section>
+
+    </section>
+
+    <section>
+      <h1>Handlekurv</h1>
+    </section>
+
+    <section>
+      <a href="#handlekurv.html">
+        <img  src="bilder/handlekurv.png" alt="Handlekurv" >
+      </a>
+    </section>
+
+  </header>
+
+  <main>
+  </main>
+
+  <script type="text/javascript">
+    const main = document.querySelector("main");
+
+    const db = firebase.database();
+    const te = db.ref("te");
+
+    VisAlle();
+
+    function Vishandlekurv(){
+
+    }
+
+    function genererHTML(snapshot){
+      let te = snapshot.val();
+      console.log(te);
+      main.innerHTML +=`
+          <article class="te">
+            <h1>${te.name}</h1>
+            <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'>
+            <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
+            <p>Pris: ${te.pris}</p>
+          </article>
+      `;
+    }
+  </script>
+  <footer>
+    <footer class="nede">
+    <br>
+      <section class="bildegrid">
+        <section>
+          <h3>Kontakt:</h3>
+          <p>Hovedkontor: <a href="http://www.sandvika.vgs.no">Sandvika Videregående</a></p>
+          <br>
+          <p>Mail: idasbjaaland@hotmail.com</p>
+          <br>
+          <p>Eier: Ida IdaSBjaaland</p>
+          <br>
+          <p>Telefon: 90716097</p>
+        </section>
+        <section>
+
+        </section>
+        <section>
+          <h3>Registrer deg gjerne hos oss:</h3>
+          <a href="Registrer.html">Trykk her for å registrere</a>
+        </section>
+      </section>
+
+    </footer>
+  </footer>
+  </body>
+</html>

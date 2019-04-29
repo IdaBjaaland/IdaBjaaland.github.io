@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+      <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAiRTp1krBY-KuGRhmws0KP5kBXbo1QVSM",
+          authDomain: "fotball-5b07d.firebaseapp.com",
+          databaseURL: "https://fotball-5b07d.firebaseio.com",
+          projectId: "fotball-5b07d",
+          storageBucket: "fotball-5b07d.appspot.com",
+          messagingSenderId: "1081312519153"
+        };
+        firebase.initializeApp(config);
+      </script>
+  </head>
+  <body>
+    <main>
+
+    </main>
+    <script>
+        const main = document.querySelector("main");
+
+        const db = firebase.database();
+        const name = db.ref("pokemon/name");
+        const jakker = db.ref("pokemon/Type1");
+        function visVare(snapshot){
+            let vare = snapshot.val();
+            main.innerHTML +=`
+                <article class="pokemon">
+                    <h1>${key}: ${pokemon.Name}</h1>
+                    <p>Overall: ${spiller["Overall"]}</p>
+                    <img src=${image.Photo}>
+
+                </article>
+            `
+        }
+        name.on("child_added",visVare);
+
+        Type1.on("child_added",visVare);
+
+        function sorterPris(){
+          name
+            .orderByChild("Pris")
+            .limitToFirst(2)
+            .on("child_added",visVare);
+        }
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dyreklinikken</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCqJMCwS10taMp7aZ6xxtxsbabfpPMPgrA",
+        authDomain: "dyreklinikk-8e466.firebaseapp.com",
+        databaseURL: "https://dyreklinikk-8e466.firebaseio.com",
+        projectId: "dyreklinikk-8e466",
+        storageBucket: "dyreklinikk-8e466.appspot.com",
+        messagingSenderId: "869516471022"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button onclick="visalfabetisk()">Oppgave 3a</button> <!-- Gjør ferdig koblingene for alle knappene -->
+        <button onclick="vistreeldste()">Oppgave 3b</button>
+        <button onclick="visbeige()">Oppgave 3c</button>
+        <button onclick="">Oppgave 3d</button>
+      </nav>
+    </header>
+    <main>
+
+    </main>
+
+    <script>
+      //Referanser til HTML-elementer
+      const main = document.querySelector("main");
+
+      //Skriv referanser til database under her:
+      const db = firebase.database();
+      const hunder = db.ref ("Dyr/Hunder");
+      visalfabetisk();
+
+      const katter = db.ref ("Dyr/Katter");
+      visalfabetisk();
+
+      function visalfabetisk(){
+        main.innerHTML = ``;
+        katter.orderByChild(dyr.Navn)
+        .startAt(A)
+        .endAt(V)
+        .on("child_added",visVare);
+      }
+
+      function vistreeldste(){
+        main.innerHTML = ``;
+        Dyr.Hunder.orderByChild("dyr.Bilde")
+        .limitToLast(3)
+        .on("child_added", visVare);
+      }
+
+      function visbeige(){
+        main.innerHTML = ``;
+        dyr.orderByChild("dyr.Farge1")
+        .equalTo(Type2)
+      }
+
+      // Javascript-funksjon for å generere HTML-kode for dyr
+      function genererHTML(snapshot){
+        let dyr = snapshot.val();
+        main.innerHTML +=`
+            <article class="Dyr">
+              <h1>${dyr.Navn}</h1>
+              <img src="${dyr.Bilde}" alt="">
+              <p>Farge: ${dyr.Farge1}, ${dyr.Type2}</p>
+              <p>Alder: ${dyr.Alder}</p>
+            </article>
+        `;
+      }
+
+      // Funksjon som viser alle dyr
+      function visAlle(){
+        main.innerHTML = ""; // sletter innholdet i main.
+        hunder.on("child_added",genererHTML);
+        katter.on("child_added", genererHTML);
+      }
+
+      // Lag egne funksjoner som tilfredstiller spørringene 3A, 3B, 3C og 3D her:
+
+      visAlle(); // Funksjon som kjøres når siden lastes
+
+    </script>
+
+  </body>
+</html>

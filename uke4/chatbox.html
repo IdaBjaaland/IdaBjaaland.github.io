@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Superchat</title>
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBDetpCxosAJEVHk9Er6f_nKv0dnA6x6Tw",
+      authDomain: "chatbox-ed8e9.firebaseapp.com",
+      databaseURL: "https://chatbox-ed8e9.firebaseio.com",
+      projectId: "chatbox-ed8e9",
+      storageBucket: "chatbox-ed8e9.appspot.com",
+      messagingSenderId: "314710510711"
+    };
+    firebase.initializeApp(config);
+  </script>
+  </head>
+  <body>
+    <h1>Superchat</h1>
+    <article id="txtmeldinger"></article>
+
+    <script>
+    let textmeldinger = document.getElementById("txtmeldinger");
+    let database = firebase.database();
+    let meldinger = database.ref("meldinger");
+    let nymelding ={
+      "avsender": "Ida",
+      "tekst": "fuck you"
+    };
+    meldinger.push(nymelding);
+    function vismelding(snapshot){
+      var melding=snapshot.val();
+      txtmeldinger.innerHTML += `<p>${melding.avsender} sier
+      ${melding.tekst}</p>`;
+    }
+    meldinger.on("child_added", vismelding);
+    </script>
+  </body>
+</html>

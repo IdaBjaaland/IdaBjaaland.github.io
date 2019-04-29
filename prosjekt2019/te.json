@@ -1,0 +1,102 @@
+{
+  "te": {
+    "01": {
+      "name": "Vanilla Matcha",
+      "type 1": "Bestsellers",
+      "type 2": "Matcha",
+      "pris": 100,
+      "imageURL": "vanilla-matcha.jpg"
+    },
+    "02": {
+      "name": "Peach Matcha",
+      "type 1": "Bestsellers",
+      "type 2": "Matcha",
+      "pris": 95,
+      "imageURL":"peach-matcha.jpg"
+    },
+    "03":{
+      "name": "Miami Melon",
+      "type 1": "Iste",
+      "type 2": "Hebral",
+      "pris": 100,
+      "imageURL": "miami-melon.jpg"
+    },
+    "04":{
+      "name": "Mango Peach Punch",
+      "type 1": "Iste",
+      "type 2": "Hebral",
+      "pris": 110,
+      "imageURL": "mango-fruit-punch.jpg"
+    },
+    "05":{
+      "name": "Gaba Guava",
+      "type 1": "Iste",
+      "type 2": "Green",
+      "pris": 110,
+      "imageURL": "gaba-guava.jpg"
+    },
+    "06":{
+      "name": "Tropicalia",
+      "type 1": "Iste",
+      "type 2": "Hebral",
+      "pris": 105,
+      "imageURL": "tropicalia.jpg"
+    },
+    "07":{
+      "name": "Organic Orange Fruit",
+      "type 1": "Iste",
+      "type 2": "Hebral",
+      "pris": 120,
+      "imageURL": "organic-orange-passionfurit.jpg"
+    },
+    "08":{
+      "name": "S`mores Chai",
+      "type 1": "Chai",
+      "type 2": "Puèrh",
+      "pris": 150,
+      "imageURL": "chai-smores.jpg"
+    },
+    "09":{
+      "name": "Pumpkin Chai",
+      "type 1": "Chai",
+      "type 2": "Black",
+      "pris": 150,
+      "imageURL": "chai-pumpkin.jpg"
+    },
+    "10":{
+      "name": "Cardamon Chai",
+      "type 1": "Chai",
+      "type 2": "White",
+      "pris": 140,
+      "imageURL": "chai-cardamon.jpg"
+    },
+    "11":{
+      "name": "Chaga Chai",
+      "type 1": "Chai",
+      "type 2": "Hebral",
+      "pris": 150,
+      "imageURL": "chai-chaga.jpg"
+    },
+    "12":{
+      "name": "Organic Choco Chaga",
+      "type 1": "Organic",
+      "type 2": "Black",
+      "pris": 110,
+      "imageURL": "organic-choco-chaga.jpg"
+    },
+    "13":{
+      "name": "Organic Hangover Helper",
+      "type 1": "Organic",
+      "type 2": "Maté",
+      "pris": 120,
+      "imageURL": "organic-hangover-helper.jpg"
+    },
+    "14":{
+      "name": "Organic Sweet Ginger Heat",
+      "type 1": "Organic",
+      "type 2": "Green",
+      "pris": 120,
+      "imageURL": "organic-sweet-ginger-heat.jpg"
+    }
+  }
+}

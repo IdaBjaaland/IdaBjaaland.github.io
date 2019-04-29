@@ -1,0 +1,78 @@
+{
+  "1":{
+    "svar":"Primærnøkkel er en unik nløkkel til hvert objekt i databasen. Det gjør at vi lett kan søke i databasen.",
+  },
+  "2":{
+    "a":{
+      "svar":"En primærnøkkel for elever på en skole kan være brukernavn."
+      },
+    "b":{
+      "svar":"En primærnøkkel for fritidsbåter kan være skilt."
+    },
+    "c":{
+      "svar":"En primærnøkkel for planter kan være egenskaper."
+    },
+    "d":{
+      "svar":"En primærnøkkel for kontaktlister kan være navn og nummer."
+    },
+    "e":{
+      "svar":"En primærnøkkel for stjerner på himmelen kan være året de kom, eller formen."
+    }
+  },
+  "3":{
+    "svar":"En kandidatnøkkel er alle alternativene som brukes som primærnøkkel."
+  },
+  "4":{
+    "svar":"En fremmednøkkel brukes for å unngå dobbeltlagring. I stedet for å lagre alle opplysningene om brukerne hver gang, lagrer vi nå referansen, fremmednøkkelen, sammen med den nye teksten og bildet."
+  },
+  "5":{
+    "svar":"Teknikkere som blir brukt for å unngå dobbeltlagring og duplisering av data, kalles normalisering."
+  },
+  "6":{
+    "spillere":{
+      "ida":{
+        "highscore":2000,
+        "sistSpilt":"21 desember",
+        "mail":"idasbjaaland@hotmail.com"
+      },
+      "gamer123":{
+        "highscore":1500,
+        "sistSpilt":"3 januar",
+        "mail":"ifg@online.no"
+      }
+    },
+    "meldinger":{
+      "001":{
+        "tekst":"Hallo folkens!",
+        "brukerID":"ida"
+      },
+      "002":{
+        "tekst":"Hva skjer??",
+        "brukerID":"gamer123"
+      }
+    }
+  },
+  "7":{
+    "001":{
+      "brukerID":3,
+      "Tittel":"Sharknado",
+      "Regissør":"Bob Stern",
+      "Informasjon":"Universial studios",
+      "År":"2004"
+    },
+    "002":{
+      "brukerID":5,
+      "Tittel":"StarWars",
+      "Regissør":"Steven Spielberg",
+      "Informasjon":"Paramount",
+      "År":"2004"
+    },
+    "003":{
+      "brukerID":8,
+      "Tittel":"E.T.",
+      "Regissør":"Steven Spielberg",
+      "Informasjon":"Paramount",
+      "År":"2009"
+    }
+  }
+}

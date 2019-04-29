@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Te</title>
+    <link rel="stylesheet" href="style.css">
+
+      <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAZatvG1MLQfoHz-izcASOqNoo0ei8NoZM",
+          authDomain: "teprosjekt.firebaseapp.com",
+          databaseURL: "https://teprosjekt.firebaseio.com",
+          projectId: "teprosjekt",
+          storageBucket: "",
+          messagingSenderId: "723521776"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+  </head>
+  <body>
+    <a href="index.html">
+      <img src="bilder/te.png" alt="te logo" class="center">
+    </a>
+    <header>
+      <section>
+          <div class="navbar">
+            <a href="#home">Vis alle</a>
+              <div class="dropdown">
+                <button class="dropbtn" type="button" name="button" onclick="VisAlle()">Vis alle typer
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#Høy-Lav">Høy-lav</a>
+                  <a href="#Lav-Høy">Lav-Høy</a>
+                </div>
+              </div>
+
+            <div class="dropdown">
+
+                <div id="myDropdown2" class="dropdown-content">
+
+              </div>
+            </div>
+            <div class="dropdown">
+              <button type="onclick" class="dropbtn" name="onclick" onclick="VisType()">Sorter etter type
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#Matcha">Matcha</a>
+                <a href="#Hebral">Hebral</a>
+                <a href="#Green">Green</a>
+                <a href="#Puérin">Puérin</a>
+                <a href="#Black">Black</a>
+                <a href="#White">White</a>
+                <a href="#Maté">Maté</a>
+              </div>
+            </div>
+
+
+            <div class="dropdown">
+              <button type="onclick" class="dropbtn" name="onclick" onclick="Vissortering()">Sorter etter produkt
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#Bestsellers">Bestsellers</a>
+                <a href="#Iste">Iste</a>
+                <a href="#Chai">Chai</a>
+                <a href="#Organic">Organic</a>
+              </div>
+            </div>
+
+      </section>
+      <section>
+        
+      </section>
+      <section>
+        <a href="handlekurv.html">
+          <img  src="bilder/handlekurv.png" alt="Handlekurv" >
+        </a>
+      </section>
+
+    </header>
+
+    <div id="bilder">
+      <img src="bilder/bestsellerss.jpg" alt="">
+      <img src="bilder/pickme.jpg" alt="">
+    </div>
+
+    <main>
+
+    </main>
+
+
+
+    <script type="text/javascript">
+      const main = document.querySelector("main");
+      const bilder = document.querySelector("#bilder");
+
+      const db = firebase.database();
+      const te = db.ref("te");
+
+
+
+      function VisAlle(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``;
+        te.on("child_added",genererHTML);
+      }
+
+      function VisPris(){ //jhgj
+        bilder.innerHTML ="";
+        main.innerHTML = ``;
+        te.orderByChild("pris").on("child_added",genererHTML);
+
+ }
+
+
+
+
+      function visType(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        pokemon.orderByChild("type 2").equalTo("Matcha").on("child_added",genererHTML);
+        pokemon.orderByChild("Type 2").equalTo("").on("child_added",visPokemon);
+      }
+      function VisType(){
+        bilder.innerHTML ="";
+        secVisType.innerHTML = ``;
+        te.on("child_added",genererHTML)
+      }
+
+
+      function genererHTML(snapshot){
+        let te = snapshot.val();
+        console.log(te);
+        main.innerHTML +=`
+            <article class="te">
+              <h1>${te.name}</h1>
+              <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'>
+              <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
+              <p>Pris: ${te.pris}</p>
+            </article>
+        `;
+      }
+    </script>
+    <footer>
+
+    </footer>  <footer class="nede">
+      <br>
+        <section class="bildegrid">
+          <section>
+            <h3>Kontakt:</h3>
+            <p>Hovedkontor: <a href="http://www.sandvika.vgs.no">Sandvika Videregående</a></p>
+            <br>
+            <p>Mail: idasbjaaland@hotmail.com</p>
+            <br>
+            <p>Eier: Ida IdaSBjaaland</p>
+            <br>
+            <p>Telefon: 90716097</p>
+          </section>
+          <section>
+
+          </section>
+          <section>
+            <h3>Registrer deg gjerne hos oss:</h3>
+            <a href="Registrer.html">Trykk her for å registrere</a>
+          </section>
+        </section>
+
+      </footer>
+  </body>
+</html>
