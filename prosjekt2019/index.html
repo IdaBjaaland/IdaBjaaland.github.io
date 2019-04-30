@@ -27,35 +27,33 @@
     <header>
       <section>
           <div class="navbar">
-            <a href="#home">Vis alle</a>
+            <a onclick="visAlle()">Vis alle</a>
               <div class="dropdown">
-                <button class="dropbtn" type="button" name="button" onclick="VisAlle()">Vis alle typer
+                <button class="dropbtn" type="button" name="button">Vis alle typer
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="#Høy-Lav">Høy-lav</a>
-                  <a href="#Lav-Høy">Lav-Høy</a>
+                  <a onclick="hoyLav()">Høy-lav</a>
+                  <a onclick="lavHoy()">Lav-Høy</a>
                 </div>
               </div>
 
             <div class="dropdown">
-
-                <div id="myDropdown2" class="dropdown-content">
-
+              <div id="myDropdown2" class="dropdown-content">
               </div>
             </div>
             <div class="dropdown">
-              <button type="onclick" class="dropbtn" name="onclick" onclick="VisType()">Sorter etter type
+              <button class="dropbtn">Sorter etter type
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#Matcha">Matcha</a>
-                <a href="#Hebral">Hebral</a>
-                <a href="#Green">Green</a>
-                <a href="#Puérin">Puérin</a>
-                <a href="#Black">Black</a>
-                <a href="#White">White</a>
-                <a href="#Maté">Maté</a>
+                <a onclick="visMatcha()">Matcha</a>
+                <a onclick="visHebral()">Hebral</a>
+                <a onclick="visGreen()">Green</a>
+                <a onclick="visPuérh()">Puérh</a>
+                <a onclick="visBlack()">Black</a>
+                <a onclick="visWhite()">White</a>
+                <a onclick="visMaté()">Maté</a>
               </div>
             </div>
 
@@ -65,10 +63,10 @@
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="#Bestsellers">Bestsellers</a>
-                <a href="#Iste">Iste</a>
-                <a href="#Chai">Chai</a>
-                <a href="#Organic">Organic</a>
+                <a onclick="visBestsellers()">Bestsellers</a>
+                <a onclick="visIste()">Iste</a>
+                <a onclick="visChai()">Chai</a>
+                <a onclick="visOrganic()">Organic</a>
               </div>
             </div>
 
@@ -92,29 +90,48 @@
         <h1>Hva vil du ha i tekoppen din?</h1>
         <p>Her vil du finne ulike forslag til hva du kan lage. Vi selger alle de beste te typene du vil finne!</p>
         <p>Vi tilbyr mange forskjellige smaker og typer te. Som passer til både små og store. </p>
-        <img src="bilder/organic.png" alt="">
+        <div class="container">
+          <a onclick="visBestsellers()">
+            <img src="bilder/organic.png" alt="">
+            <div class="content">
+              <h1>Bestsellers</h1>
+            </div>
+          </a>
+        </div>
       </section>
+
       <section>
-
       </section>
+
       <section>
-
       </section>
+
       <section class="center">
-        <img src="bilder/chaite.jpg" alt="">
+        <div class="container">
+          <a onclick="visChai()">
+            <img src="bilder/chaite.jpg" alt="">
+            <div class="content">
+              <h1>Chai te</h1>
+            </div>
+          </a>
+        </div>
       </section>
+
       <section class="center">
-        <img src="bilder/three.png" onmouseover="this.src='bilder/organic-orange-passionfruit-kopp.jpg'" onmouseout="this.src='bilder/three.png'"/></a>
+        <div class="container">
+          <a onclick="visIste()">
+            <img src="bilder/three.png" onmouseover="this.src='bilder/organic-orange-passionfruit-kopp.jpg'" onmouseout="this.src='bilder/three.png'"/>
+            <div class="content">
+              <h1>For deg som elsker iste</h1>
+            </div>
+          </a>
+        </div>
       </section>
-
-
     </div>
 
     <main>
 
     </main>
-
-
 
     <script type="text/javascript">
       const main = document.querySelector("main");
@@ -131,28 +148,83 @@
         te.on("child_added",genererHTML);
       }
 
-      function VisPris(){ //jhgj
+      function hoyLav(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``;
+        te.orderByChild("pris").on("child_added",genererHTMLSnudd);
+      }
+
+      function lavHoy(){
         bilder.innerHTML ="";
         main.innerHTML = ``;
         te.orderByChild("pris").on("child_added",genererHTML);
+      }
 
- }
-
-
-
-
-      function visType(){
+      function visMatcha(){
         bilder.innerHTML ="";
         main.innerHTML = ``
-        pokemon.orderByChild("type 2").equalTo("Matcha").on("child_added",genererHTML);
-        pokemon.orderByChild("Type 2").equalTo("").on("child_added",visPokemon);
-      }
-      function VisType(){
-        bilder.innerHTML ="";
-        secVisType.innerHTML = ``;
-        te.on("child_added",genererHTML)
+        te.orderByChild("type 2").equalTo("Matcha").on("child_added",genererHTML);
       }
 
+      function visHebral(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        te.orderByChild("type 2").equalTo("Hebral").on("child_added",genererHTML);
+      }
+
+      function visGreen(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        te.orderByChild("type 2").equalTo("Green").on("child_added",genererHTML);
+      }
+
+      function visPuérh(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        te.orderByChild("type 2").equalTo("Puérh").on("child_added",genererHTML);
+      }
+
+      function visBlack(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        te.orderByChild("type 2").equalTo("Black").on("child_added",genererHTML);
+      }
+
+      function visWhite(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        te.orderByChild("type 2").equalTo("White").on("child_added",genererHTML);
+      }
+
+      function visMaté(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        te.orderByChild("type 2").equalTo("Maté").on("child_added",genererHTML);
+      }
+
+      function visBestsellers(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        te.orderByChild("type 1").equalTo("Bestsellers").on("child_added",genererHTML);
+      }
+
+      function visIste(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        te.orderByChild("type 1").equalTo("Iste").on("child_added",genererHTML);
+      }
+
+      function visChai(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        te.orderByChild("type 1").equalTo("Chai").on("child_added",genererHTML);
+      }
+
+      function visOrganic(){
+        bilder.innerHTML ="";
+        main.innerHTML = ``
+        te.orderByChild("type 1").equalTo("Organic").on("child_added",genererHTML);
+      }
 
       function genererHTML(snapshot){
         let te = snapshot.val();
@@ -166,6 +238,18 @@
             </article>
         `;
       }
+      function genererHTMLSnudd(snapshot){
+        let te = snapshot.val();
+        console.log(te);
+        main.innerHTML =`
+            <article class="te">
+              <h1>${te.name}</h1>
+              <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'>
+              <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
+              <p>Pris: ${te.pris}</p>
+            </article>
+        ` + main.innerHTML;
+      }
     </script>
     <footer>
 
@@ -173,21 +257,19 @@
       <br>
         <section class="bildegrid">
           <section>
-            <h3>Kontakt:</h3>
-            <p>Hovedkontor: <a href="http://www.sandvika.vgs.no">Sandvika Videregående</a></p>
-            <br>
-            <p>Mail: idasbjaaland@hotmail.com</p>
-            <br>
-            <p>Eier: Ida IdaSBjaaland</p>
-            <br>
-            <p>Telefon: 90716097</p>
+            <h3>Sosiale medier</h3>
+              <a href="https://www.instagram.com/davidstea/"><img src="bilder/insta.png" alt=""></a>
+              <a href="https://www.facebook.com/DAVIDsTEA/"><img src="bilder/face.png" alt=""></a>
+              <a href="https://www.youtube.com/user/DavidsTEA"><img src="bilder/youtube.png" alt=""></a>
           </section>
           <section>
 
           </section>
           <section>
-            <h3>Registrer deg gjerne hos oss:</h3>
-            <a href="Registrer.html">Trykk her for å registrere</a>
+            <h3>Informasjon:</h3>
+            <p>Hovedkontor: <a href="http://www.sandvika.vgs.no">Sandvika Videregående</a></p>
+            <p>Mail: idasbjaaland@hotmail.com</p>
+            <p>Telefon: 90716097</p>
           </section>
         </section>
 
