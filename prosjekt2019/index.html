@@ -15,7 +15,7 @@
           projectId: "teprosjekt",
           storageBucket: "",
           messagingSenderId: "723521776"
-        };
+        }
         firebase.initializeApp(config);
       </script>
 
@@ -27,9 +27,8 @@
     <header>
       <section>
           <div class="navbar">
-            <a onclick="visAlle()">Vis alle</a>
               <div class="dropdown">
-                <button class="dropbtn" type="button" name="button">Vis alle typer
+                <button class="dropbtn" type="button" name="button" onclick="visAlle()">Vis alle typer
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
@@ -50,7 +49,6 @@
                 <a onclick="visMatcha()">Matcha</a>
                 <a onclick="visHebral()">Hebral</a>
                 <a onclick="visGreen()">Green</a>
-                <a onclick="visPuérh()">Puérh</a>
                 <a onclick="visBlack()">Black</a>
                 <a onclick="visWhite()">White</a>
                 <a onclick="visMaté()">Maté</a>
@@ -88,8 +86,8 @@
 
       <section class="center">
         <h1>Hva vil du ha i tekoppen din?</h1>
-        <p>Her vil du finne ulike forslag til hva du kan lage. Vi selger alle de beste te typene du vil finne!</p>
-        <p>Vi tilbyr mange forskjellige smaker og typer te. Som passer til både små og store. </p>
+        <p>Her vil du finne ulike forslag til hvordan te du kan lage. Vi selger alle toppselgerne, så vær rask!</p>
+        <p>Bli med oss til en verden full av te - hvor matcha, chai og iste er våre bestselgere.</p>
         <div class="container">
           <a onclick="visBestsellers()">
             <img src="bilder/organic.png" alt="">
@@ -120,7 +118,7 @@
       <section class="center">
         <div class="container">
           <a onclick="visIste()">
-            <img src="bilder/three.png" onmouseover="this.src='bilder/organic-orange-passionfruit-kopp.jpg'" onmouseout="this.src='bilder/three.png'"/>
+            <img src="bilder/flaske1.png" onmouseover="this.src='bilder/flaske2.png'" onmouseout="this.src='bilder/flaske1.png'"/>
             <div class="content">
               <h1>For deg som elsker iste</h1>
             </div>
@@ -142,7 +140,7 @@
 
 
 
-      function VisAlle(){
+      function visAlle(){
         bilder.innerHTML ="";
         main.innerHTML = ``;
         te.on("child_added",genererHTML);
@@ -176,12 +174,6 @@
         bilder.innerHTML ="";
         main.innerHTML = ``
         te.orderByChild("type 2").equalTo("Green").on("child_added",genererHTML);
-      }
-
-      function visPuérh(){
-        bilder.innerHTML ="";
-        main.innerHTML = ``
-        te.orderByChild("type 2").equalTo("Puérh").on("child_added",genererHTML);
       }
 
       function visBlack(){
@@ -227,19 +219,24 @@
       }
 
       function genererHTML(snapshot){
+        let key = snapshot.key;
         let te = snapshot.val();
+        let parent = snapshot.ref.parent.key;
         console.log(te);
         main.innerHTML +=`
             <article class="te">
               <h1>${te.name}</h1>
-              <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'>
+              <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'onmouseover="this.src='bilder/${te["imageURL2"]}'" onmouseout="this.src='bilder/${te["imageURL"]}'"/>
               <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
               <p>Pris: ${te.pris}</p>
+              <a href="produkt.html?key=${key}&parent=${parent}">Les Mer</a>
             </article>
         `;
       }
       function genererHTMLSnudd(snapshot){
+        let key = snapshot.key;
         let te = snapshot.val();
+        let parent = snapshot.ref.parent.key;
         console.log(te);
         main.innerHTML =`
             <article class="te">
@@ -247,13 +244,13 @@
               <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'>
               <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
               <p>Pris: ${te.pris}</p>
+              <a href="produkt.html?key=${key}&parent=${parent}">Les Mer</a>
             </article>
         ` + main.innerHTML;
       }
     </script>
-    <footer>
 
-    </footer>  <footer class="nede">
+    <footer class="nede">
       <br>
         <section class="bildegrid">
           <section>

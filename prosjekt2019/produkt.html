@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Te</title>
+    <link rel="stylesheet" href="style.css">
+
+      <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAZatvG1MLQfoHz-izcASOqNoo0ei8NoZM",
+          authDomain: "teprosjekt.firebaseapp.com",
+          databaseURL: "https://teprosjekt.firebaseio.com",
+          projectId: "teprosjekt",
+          storageBucket: "",
+          messagingSenderId: "723521776"
+        }
+        firebase.initializeApp(config);
+      </script>
+  </head>
+  <body>
+    <a href="index.html">
+      <img src="bilder/te.png" alt="te logo" class="center">
+    </a>
+    <header>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <script type="text/javascript">
+      const main = document.querySelector("main");
+      const secprodukt = document.querySelector("#secprodukt");
+
+      let url_string = window.location.href;
+      let url = new URL(url_string);
+      let parent = url.searchParams.get("parent");
+      let key = url.searchParams.get("key");
+
+      console.log("te/"+parent+"/"+key);
+
+      const db = firebase.database();
+      const produkt = db.ref("te/"+parent+"/"+key);
+
+      produkt.on("value", genererHTML);
+
+
+
+      function genererHTML(snapshot){
+        let key = snapshot.key;
+        let te = snapshot.val();
+        let parent = snapshot.ref.parent.key;
+        console.log(te);
+        main.innerHTML +=`
+            <article class="te">
+              <h1>${te.name}</h1>
+              <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'onmouseover="this.src='bilder/${te["imageURL2"]}'" onmouseout="this.src='bilder/${te["imageURL"]}'"/>
+              <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
+              <p>Pris: ${te.pris}</p>
+            </article>
+        `;
+      }
+      function genererHTMLSnudd(snapshot){
+        let key = snapshot.key;
+        let te = snapshot.val();
+        let parent = snapshot.ref.parent.key;
+        console.log(te);
+        main.innerHTML =`
+            <article class="te">
+              <h1>${te.name}</h1>
+              <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'>
+              <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
+              <p>Pris: ${te.pris}</p>
+            </article>
+        ` + main.innerHTML;
+      }
+    </script>
+
+    <footer class="nede">
+      <br>
+        <section class="bildegrid">
+          <section>
+            <h3>Sosiale medier</h3>
+              <a href="https://www.instagram.com/davidstea/"><img src="bilder/insta.png" alt=""></a>
+              <a href="https://www.facebook.com/DAVIDsTEA/"><img src="bilder/face.png" alt=""></a>
+              <a href="https://www.youtube.com/user/DavidsTEA"><img src="bilder/youtube.png" alt=""></a>
+          </section>
+          <section>
+
+          </section>
+          <section>
+            <h3>Informasjon:</h3>
+            <p>Hovedkontor: <a href="http://www.sandvika.vgs.no">Sandvika Videregående</a></p>
+            <p>Mail: idasbjaaland@hotmail.com</p>
+            <p>Telefon: 90716097</p>
+          </section>
+        </section>
+
+      </footer>
+  </body>
+</html>

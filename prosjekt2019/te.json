@@ -5,98 +5,256 @@
       "type 1": "Bestsellers",
       "type 2": "Matcha",
       "pris": 100,
-      "imageURL": "vanilla-matcha.jpg"
+      "imageURL": "vanilla-matcha.jpg",
+      "imageURL2": "vanilla-matcha.jpg"
     },
     "02": {
       "name": "Peach Matcha",
       "type 1": "Bestsellers",
       "type 2": "Matcha",
       "pris": 95,
-      "imageURL":"peach-matcha.jpg"
+      "imageURL":"peach-matcha.jpg",
+      "imageURL2": "peach-matcha.jpg"
     },
     "03":{
+      "name": "Wild Honey Matcha",
+      "type 1": "Bestsellers",
+      "type 2": "Matcha",
+      "pris": 120,
+      "imageURL": "wildhoney.jpg",
+      "imageURL2": "wildhoney.jpg"
+    },
+    "04":{
+      "name": "Blueberry Matcha",
+      "type 1": "Iste",
+      "type 2": "Matcha",
+      "pris": 75,
+      "imageURL": "blueberrymatcha.jpg",
+      "imageURL2": "blueberrykopp.jpg"
+    },
+    "05":{
+      "name": "Strawberry Matcha",
+      "type 1": "Bestsellers",
+      "type 2": "Matcha",
+      "pris": 150,
+      "imageURL": "strawmatcha.jpg",
+      "imageURL2": "strawmatcha.jpg"
+    },
+    "06":{
+      "name": "Cherry Blossom Matcha",
+      "type 1": "Bestsellers",
+      "type 2": "Matcha",
+      "pris": 110,
+      "imageURL": "cherrymatcha.jpg",
+      "imageURL2": "cherrymatcha.jpg"
+    },
+    "07":{
+      "name": "Golden Turmeric Matcha",
+      "type 1": "Organic",
+      "type 2": "Matcha",
+      "pris": 150,
+      "imageURL": "goldenmatcha.jpg",
+      "imageURL2": "goldenmatcha.jpg"
+    },
+    "08":{
+      "name": "Grand Cru Matcha",
+      "type 1": "Organic",
+      "type 2": "Matcha",
+      "pris": 85,
+      "imageURL": "grandcrumatcha.jpg",
+      "imageURL2": "grandcrumatcha.jpg"
+    },
+    "09":{
       "name": "Miami Melon",
       "type 1": "Iste",
       "type 2": "Hebral",
       "pris": 100,
-      "imageURL": "miami-melon.jpg"
+      "imageURL": "miami-melon.jpg",
+      "imageURL2": "miami-melon-kopp.jpg"
     },
-    "04":{
+    "10":{
       "name": "Mango Peach Punch",
       "type 1": "Iste",
       "type 2": "Hebral",
       "pris": 110,
-      "imageURL": "mango-fruit-punch.jpg"
+      "imageURL": "mango-fruit-punch.jpg",
+      "imageURL2": "mango-peach-kopp.jpg"
     },
-    "05":{
+    "11":{
       "name": "Gaba Guava",
       "type 1": "Iste",
       "type 2": "Green",
       "pris": 110,
-      "imageURL": "gaba-guava.jpg"
+      "imageURL": "gaba-guava.jpg",
+      "imageURL2": "gaba-guava-kopp.jpg"
     },
-    "06":{
+    "12":{
+      "name": "Grapefruit Rose Starburst",
+      "type 1": "Iste",
+      "type 2": "Green",
+      "pris": 120,
+      "imageURL": "grapefruitgreen.jpg",
+      "imageURL2": "grapegreenkopp.jpg"
+    },
+    "13":{
+      "name": "Decaf Lychee Peach",
+      "type 1": "Iste",
+      "type 2": "Green",
+      "pris": 100,
+      "imageURL": "decafgreen.jpg",
+      "imageURL2": "decafgreenkopp.jpg"
+    },
+    "14":{
+      "name": "Matcha Ice Cream",
+      "type 1": "Organic",
+      "type 2": "Green",
+      "pris": 150,
+      "imageURL": "matchagreen.jpg",
+      "imageURL2": "matchagreen.jpg"
+    },
+    "15":{
       "name": "Tropicalia",
       "type 1": "Iste",
       "type 2": "Hebral",
       "pris": 105,
-      "imageURL": "tropicalia.jpg"
+      "imageURL": "tropicalia.jpg",
+      "imageURL2": "tropicalia-kopp.jpg"
     },
-    "07":{
+    "16":{
       "name": "Organic Orange Fruit",
       "type 1": "Iste",
       "type 2": "Hebral",
       "pris": 120,
-      "imageURL": "organic-orange-passionfurit.jpg"
+      "imageURL": "organic-orange-passionfurit.jpg",
+      "imageURL2": "organic-orange-passionfruit-kopp.jpg"
     },
-    "08":{
-      "name": "S`mores Chai",
-      "type 1": "Chai",
-      "type 2": "Puèrh",
-      "pris": 150,
-      "imageURL": "chai-smores.jpg"
-    },
-    "09":{
-      "name": "Pumpkin Chai",
-      "type 1": "Chai",
-      "type 2": "Black",
-      "pris": 150,
-      "imageURL": "chai-pumpkin.jpg"
-    },
-    "10":{
+    "17":{
       "name": "Cardamon Chai",
       "type 1": "Chai",
       "type 2": "White",
       "pris": 140,
-      "imageURL": "chai-cardamon.jpg"
+      "imageURL": "chai-cardamon.jpg",
+      "imageURL2": "chai-cardamon.jpg"
     },
-    "11":{
+    "18":{
       "name": "Chaga Chai",
       "type 1": "Chai",
       "type 2": "Hebral",
       "pris": 150,
-      "imageURL": "chai-chaga.jpg"
+      "imageURL": "chai-chaga.jpg",
+      "imageURL2": "chai-chaga.jpg"
     },
-    "12":{
-      "name": "Organic Choco Chaga",
-      "type 1": "Organic",
-      "type 2": "Black",
-      "pris": 110,
-      "imageURL": "organic-choco-chaga.jpg"
+    "19":{
+      "name": "Yaupon",
+      "type 1": "Iste",
+      "type 2": "Maté",
+      "pris": 140,
+      "imageURL": "Mate.jpg",
+      "imageURL2": "matekopp.jpg"
     },
-    "13":{
-      "name": "Organic Hangover Helper",
+    "20":{
+      "name": "Just Beet It",
+      "type 1": "Bestsellers",
+      "type 2": "Maté",
+      "pris": 180,
+      "imageURL": "justmate.jpg",
+      "imageURL2": "justmate.jpg"
+    },
+    "21":{
+      "name": "The Buzz",
       "type 1": "Organic",
       "type 2": "Maté",
       "pris": 120,
-      "imageURL": "organic-hangover-helper.jpg"
+      "imageURL": "thebuzzmate.jpg",
+      "imageURL2": "thebuzzmate.jpg"
     },
-    "14":{
+    "22":{
+      "name": "Jumpy Monkey",
+      "type 1": "Organic",
+      "type 2": "Maté",
+      "pris": 80,
+      "imageURL": "jumpymate.jpg",
+      "imageURL2": "jumpymate.jpg"
+    },
+    "23":{
+      "name": "Chocolate Rocket",
+      "type 1": "Organic",
+      "type 2": "Maté",
+      "pris": 100,
+      "imageURL": "chocolatemate.jpg",
+      "imageURL2": "chocolatemate.jpg"
+    },
+    "24":{
       "name": "Organic Sweet Ginger Heat",
       "type 1": "Organic",
       "type 2": "Green",
       "pris": 120,
-      "imageURL": "organic-sweet-ginger-heat.jpg"
+      "imageURL": "organic-sweet-ginger-heat.jpg",
+      "imageURL2": "organic-sweet-ginger-heat.jpg"
+    },
+    "25":{
+      "name": "Organic Choco Chaga",
+      "type 1": "Organic",
+      "type 2": "Black",
+      "pris": 110,
+      "imageURL": "organic-choco-chaga.jpg",
+      "imageURL2": "organic-choco-chaga.jpg"
+    },
+    "26":{
+      "name": "Banana Grapefruit",
+      "type 1": "Iste",
+      "type 2": "Black",
+      "pris": 110,
+      "imageURL": "bananablack.jpg",
+      "imageURL2": "bananakopp.jpg"
+    },
+    "27":{
+      "name": "Organic Happy Valley Darjeling",
+      "type 1": "Organic",
+      "type 2": "Black",
+      "pris": 110,
+      "imageURL": "Organicblack.jpg",
+      "imageURL2": "Organicblack.jpg"
+    },
+    "28":{
+      "name": "Bergamot Kiss",
+      "type 1": "Bestsellers",
+      "type 2": "Black",
+      "pris": 100,
+      "imageURL": "Bergamot.jpg",
+      "imageURL2": "Bergamot.jpg"
+    },
+    "29":{
+      "name": "Organic Chocox Detox",
+      "type 1": "Iste",
+      "type 2": "Black",
+      "pris": 95,
+      "imageURL": "detox.jpg",
+      "imageURL2": "detoxkopp.jpg"
+    },
+    "30":{
+      "name": "Chocolate covered almond",
+      "type 1": "Chai",
+      "type 2": "Black",
+      "pris": 145,
+      "imageURL": "almond.jpg",
+      "imageURL2": "almond.jpg"
+    },
+    "31":{
+      "name": "Organic Vanilla Chai",
+      "type 1": "Chai",
+      "type 2": "Black",
+      "pris": 130,
+      "imageURL": "organicvanillachai.jpg",
+      "imageURL2": "organicvanillachai.jpg"
+    },
+    "32":{
+      "name": "Pumpkin Chai",
+      "type 1": "Chai",
+      "type 2": "Black",
+      "pris": 150,
+      "imageURL": "chai-pumpkin.jpg",
+      "imageURL2": "chai-pumpkin.jpg"
     }
   }
 }
