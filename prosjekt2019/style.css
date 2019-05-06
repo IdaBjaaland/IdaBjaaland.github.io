@@ -166,24 +166,24 @@ body {
 
 @media(max-width:1400px){
   main, header, footer{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media(max-width:1000px){
   main, header, footer{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 @media(max-width:800px){
   main, header, footer{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media(max-width:600px){
   main, header, footer{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }

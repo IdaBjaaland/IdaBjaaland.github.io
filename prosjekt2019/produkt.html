@@ -40,10 +40,10 @@
       let parent = url.searchParams.get("parent");
       let key = url.searchParams.get("key");
 
-      console.log("te/"+parent+"/"+key);
+      console.log("te/"+key);
 
       const db = firebase.database();
-      const produkt = db.ref("te/"+parent+"/"+key);
+      const produkt = db.ref("te/"+key);
 
       produkt.on("value", genererHTML);
 
