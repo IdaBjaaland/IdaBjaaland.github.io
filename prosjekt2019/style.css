@@ -166,7 +166,7 @@ body {
 
 @media(max-width:1400px){
   main, header, footer{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
