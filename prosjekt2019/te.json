@@ -6,7 +6,11 @@
       "type 2": "Matcha",
       "pris": 100,
       "imageURL": "vanilla-matcha.jpg",
-      "imageURL2": "vanilla-matcha.jpg"
+      "imageURL2": "vanilla-matcha.jpg",
+      "beskrivelse" : "Denne helt naturlige blandingen av vanilje, matcha grønn tepulver og søt kokosnøtt nektar er den enkleste måten å få matcha-fikse på. Alt du trenger å gjøre er å avgjøre om du vil starte dagen med en Vanilla Matcha latte, en grønn smoothie eller noen havregryn på neste nivå. De gode nyhetene? Du trenger ikke å bestemme mellom smak, energi og antioksidanter - denne teen har dem alle.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "02": {
       "name": "Peach Matcha",
@@ -14,7 +18,11 @@
       "type 2": "Matcha",
       "pris": 95,
       "imageURL":"peach-matcha.jpg",
-      "imageURL2": "peach-matcha.jpg"
+      "imageURL2": "peach-matcha.jpg",
+      "beskrivelse" : "Vi tar antioksidant-rik matcha til nye høyder. En helt naturlig blanding av matcha grønn tepulver, rent rørsukker og fruktige notater av fersken, denne Peach Matcha får deg til å tenke på nytt om morgenen. Prøv det som en iskremt latte for en perfekt balanse mellom kremaktig godhet, saftig fersken og grønn te fordeler.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "03":{
       "name": "Wild Honey Matcha",
@@ -22,7 +30,11 @@
       "type 2": "Matcha",
       "pris": 120,
       "imageURL": "wildhoney.jpg",
-      "imageURL2": "wildhoney.jpg"
+      "imageURL2": "wildhoney.jpg",
+      "beskrivelse" : "Slip løs blomsterkraften din med denne deilige blomstrende matcha grønn teen. Dripping med wildflower honning smaken og friskheten av energigjennende steinmalt grønn te, er dette søte og duftende matchpulveret som å nippe til en vårdag. Enten du prøver det varmt, iskjøtt eller som en velsmakende grønn telakett, er det ganske mye garantert å sette litt pep i ditt skritt.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "04":{
       "name": "Blueberry Matcha",
@@ -30,7 +42,11 @@
       "type 2": "Matcha",
       "pris": 75,
       "imageURL": "blueberrymatcha.jpg",
-      "imageURL2": "blueberrykopp.jpg"
+      "imageURL2": "blueberrykopp.jpg",
+      "beskrivelse" : "Spark sommerens vibber opp i hakk med vår søte og revitaliserende Blueberry Matcha. Bursting med ferskt plukket blåbær, mega-sunn matcha grønn te og rent rørsukker, det er en iste latte som venter på å skje. Den beste delen? Denne deilig fruktige blandingen er fullpakket med alle de kraftige og metabolske økende fordelene ved matcha for en øyeblikkelig pick-me-up. Gode ​​vibrer rundt.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "05":{
       "name": "Strawberry Matcha",
@@ -38,7 +54,11 @@
       "type 2": "Matcha",
       "pris": 150,
       "imageURL": "strawmatcha.jpg",
-      "imageURL2": "strawmatcha.jpg"
+      "imageURL2": "strawmatcha.jpg",
+      "beskrivelse" : "Denne helt naturlige blandingen av matcha grønn tepulver, rørsukker og vilt jordbær er en fin måte å slå på. Fullpakket med alle de mega-sunne fordelene med matcha, vil du legge til en skje med alle dine fave drinker - fra jordbærmilkshakes og powerhouse smoothie-boller til å aktivere iskrem. Med en fruktig matcha denne gode, går grønn har aldri vært enklere.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "06":{
       "name": "Cherry Blossom Matcha",
@@ -46,7 +66,11 @@
       "type 2": "Matcha",
       "pris": 110,
       "imageURL": "cherrymatcha.jpg",
-      "imageURL2": "cherrymatcha.jpg"
+      "imageURL2": "cherrymatcha.jpg",
+      "beskrivelse" : "Når det gjelder å bli romantisk, treffer denne forlokkende fruktige hvite teen alle de riktige notatene. Til å begynne med er det fullpakket med saftige kirsebær, som av noen er sagt som et afrodisiakum.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "07":{
       "name": "Golden Turmeric Matcha",
@@ -54,7 +78,11 @@
       "type 2": "Matcha",
       "pris": 150,
       "imageURL": "goldenmatcha.jpg",
-      "imageURL2": "goldenmatcha.jpg"
+      "imageURL2": "goldenmatcha.jpg",
+      "beskrivelse" : "Vi er så besatt av gullmælk - den gamle gurkemeiehelsen tonic med kokos og sort pepper - at vi måtte lage en matcha-versjon. Denne søte og krydret steinmalt grønn te kombinerer de energibesparende fordelene med matchpulver med hydratiserende kokosnøttvann, hudfarge gurkemeie og en sprekk av sort pepper, som sies å hjelpe kroppen å absorbere curcumin bedre. Resultatet? En pulserende latte-klar blanding som får deg til å utstråle som en superstjerne.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "08":{
       "name": "Grand Cru Matcha",
@@ -62,7 +90,11 @@
       "type 2": "Matcha",
       "pris": 85,
       "imageURL": "grandcrumatcha.jpg",
-      "imageURL2": "grandcrumatcha.jpg"
+      "imageURL2": "grandcrumatcha.jpg",
+      "beskrivelse" : "Delikat glatt og fløyelsaktig, med en lys grønn farge og forfriskende smak, er dette en av de høyeste karakterene (og deiligeste) matchas på jorden. For å gjøre det, er hver vene kjærlig fjernet fra grønne teblader, som deretter males inn i et superfint matchpulver som visser inn i en umulig kremaktig brygge. Den ultimate energiforsterkningen, avgiftningsmiddel og godbit-te.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "09":{
       "name": "Miami Melon",
@@ -70,7 +102,11 @@
       "type 2": "Hebral",
       "pris": 100,
       "imageURL": "miami-melon.jpg",
-      "imageURL2": "miami-melon-kopp.jpg"
+      "imageURL2": "miami-melon-kopp.jpg",
+      "beskrivelse" : "Få dette gjennom melon: Denne crushable koffeinfri fruktinfusjonen kan være vår mest melonete-te noensinne. Bursting med saftig vannmelon, søt honningdew og tarthibiscus, det er den slags blandingen som holder festen i gang uten å holde deg oppe hele natten. Server det på is for en rosa iste som er forfriskende på alle nivåer.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "10":{
       "name": "Mango Peach Punch",
@@ -78,7 +114,11 @@
       "type 2": "Hebral",
       "pris": 110,
       "imageURL": "mango-fruit-punch.jpg",
-      "imageURL2": "mango-peach-kopp.jpg"
+      "imageURL2": "mango-peach-kopp.jpg",
+      "beskrivelse" : "Hvis du leter etter en torkende drikk som vil glede både barn og voksne, er denne tropiske koffeinfrie teen en klar vinner. Det er morsomt og fruktig, men likevel rik og eksotisk, med store biter av ananas og mango, tangy skiver av mandarin, søte jordbær og vakre marigoldblomster. Serveres på is, er det garantert å slå piknik, bassengfest eller grillfest.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "11":{
       "name": "Gaba Guava",
@@ -86,7 +126,11 @@
       "type 2": "Green",
       "pris": 110,
       "imageURL": "gaba-guava.jpg",
-      "imageURL2": "gaba-guava-kopp.jpg"
+      "imageURL2": "gaba-guava-kopp.jpg",
+      "beskrivelse" : "Hør opp, Brainiac. Denne tropiske blandingen av moden guava, ananas og kokos er laget med GABA, et neste nivå grønn te som sies å øke fokus og hjernefunksjon. Det er fruktig, energigivende og mouthwateringly saftig. Brew en kopp før neste brainstorm eller studere sesh og gjør deg klar til å fyre opp de nevronene!",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "12":{
       "name": "Grapefruit Rose Starburst",
@@ -94,7 +138,11 @@
       "type 2": "Green",
       "pris": 120,
       "imageURL": "grapefruitgreen.jpg",
-      "imageURL2": "grapegreenkopp.jpg"
+      "imageURL2": "grapegreenkopp.jpg",
+      "beskrivelse" : "Den beste måten å slappe av på en fest? Med et glass av denne munnvannet sitron oolong te. Vi elsker sin lyse grapefruktjuiciness - men det er de duftende notatene av rosewater og tarthibiscus som gjør det til en ekte stjerne. Forfriskende fruktig og herlig blomstring, er denne stilige blandingen helt sikkert wow, uansett hvordan du serverer den - varm, iskrem eller med et sprut av latter.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "13":{
       "name": "Decaf Lychee Peach",
@@ -102,7 +150,11 @@
       "type 2": "Green",
       "pris": 100,
       "imageURL": "decafgreen.jpg",
-      "imageURL2": "decafgreenkopp.jpg"
+      "imageURL2": "decafgreenkopp.jpg",
+      "beskrivelse" : "Elske smaken av te, men ikke koffein? Denne fruktige koffeinfri grønn teen har navnet ditt på den. Med saftig sommerfersken, floral lychee og aromatisk rose er det en forfriskende blanding du kan nyte når som helst på dagen. Sipp det som en livlig morgen iste eller som en tropisk nattlig godbit. Ta tak i kruset ditt - det er kul et eller annet sted.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "14":{
       "name": "Matcha Ice Cream",
@@ -110,7 +162,11 @@
       "type 2": "Green",
       "pris": 150,
       "imageURL": "matchagreen.jpg",
-      "imageURL2": "matchagreen.jpg"
+      "imageURL2": "matchagreen.jpg",
+      "beskrivelse" : "Vi økte smidig denne kremrike blandingen av grønn te, hvit sjokolade og mandler med en dobbel scoop matcha pulver for ekstra energi og fordeler. Det er deilig søtt og nutty, uten å være over-the-top dekadent - perfekt for å tilfredsstille din dessert cravings. Og med sin forfriskende matcha grønn te smak, kan du få isen din og nippe den også.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "15":{
       "name": "Tropicalia",
@@ -118,7 +174,11 @@
       "type 2": "Hebral",
       "pris": 105,
       "imageURL": "tropicalia.jpg",
-      "imageURL2": "tropicalia-kopp.jpg"
+      "imageURL2": "tropicalia-kopp.jpg",
+      "beskrivelse" : "Vil du gå et sted virkelig eksotisk i sommer? Bare vær deg selv en kopp av denne mouthwatering koffeinfri fruktinfusjonen. Du vil vende over sine forfriskende tropiske smaker, som saftig ananas og kremaktig kokos. Vi sprinklet selv i noen vakre safflower og marigold blomstrer. Ikke bare smaker det akkurat som en piña colada, det gjør at du føler deg så glad som en også.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "16":{
       "name": "Organic Orange Fruit",
@@ -126,7 +186,11 @@
       "type 2": "Hebral",
       "pris": 120,
       "imageURL": "organic-orange-passionfurit.jpg",
-      "imageURL2": "organic-orange-passionfruit-kopp.jpg"
+      "imageURL2": "organic-orange-passionfruit-kopp.jpg",
+      "beskrivelse" : "Rise og skinne, te elsker! Start dagen på høyre fot med denne tropiske økologisk fruktinfusjonen inspirert av din favoritt morgen OJ. Kombinert med søt og tangy lidenskapsfrukt, blir det til en forfriskende koffeinfri iste du kan nyte 24/7. Den er søt, levende og herlig solrik - akkurat som deg.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "17":{
       "name": "Cardamon Chai",
@@ -134,7 +198,11 @@
       "type 2": "White",
       "pris": 140,
       "imageURL": "chai-cardamon.jpg",
-      "imageURL2": "chai-cardamon.jpg"
+      "imageURL2": "chai-cardamon.jpg",
+      "beskrivelse" : "loljaja",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "18":{
       "name": "Chaga Chai",
@@ -142,7 +210,11 @@
       "type 2": "Hebral",
       "pris": 150,
       "imageURL": "chai-chaga.jpg",
-      "imageURL2": "chai-chaga.jpg"
+      "imageURL2": "chai-chaga.jpg",
+      "beskrivelse" : "A loving homage to Turkish coffee, this cardamom-spiked white tea could become your new obsession. Blended with energizing black tea, coffee beans and a dollop of cream, it manages to be both smooth and refreshing, rich yet surprisingly light. A sweet and satisfying dessert-like tea that’ll seduce you from the first sip.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "19":{
       "name": "Yaupon",
@@ -150,7 +222,11 @@
       "type 2": "Maté",
       "pris": 140,
       "imageURL": "Mate.jpg",
-      "imageURL2": "matekopp.jpg"
+      "imageURL2": "matekopp.jpg",
+      "beskrivelse" : "Har du noen gang prøvd yaupon te? Bærekraftig høstet i Texas, er denne forfriskende busk den eneste naturlig koffeinholdige planten hjemmehørende i Nord-Amerika - og det perfekte valget for din neste ettermiddags pick-up. Den er glatt, rik på antioksidanter og fullpakket med jitterfri energi. Med notater av ferskpresset oliven og søte mineraler, er denne superherben en velsmakende måte å slå på.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "20":{
       "name": "Just Beet It",
@@ -158,7 +234,11 @@
       "type 2": "Maté",
       "pris": 180,
       "imageURL": "Justmate.jpg",
-      "imageURL2": "Justmate.jpg"
+      "imageURL2": "Justmate.jpg",
+      "beskrivelse" : "Denne forfriskende frukt- og vegmatéen ble født for lørdag kvelds dans-offs. Hva gjør det så bra? Den er fullpakket med forfriskende ingredienser som vil få noen fest startet - fra søte og saftige rødbeter til næringsrik superfrukt som goji og brombær. Legg til i en pop med energigivende guarana og grønn yerba kompis, og du vil være moonwalking på sekunder. Varm eller is, det er ganske vanskelig å bete.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "21":{
       "name": "The Buzz",
@@ -166,7 +246,11 @@
       "type 2": "Maté",
       "pris": 120,
       "imageURL": "thebuzzmate.jpg",
-      "imageURL2": "thebuzzmate.jpg"
+      "imageURL2": "thebuzzmate.jpg",
+      "beskrivelse" : "Få sprekk om morgenen med en deilig energi som øker teen. Denne citrus maté teen har stimulerende spark av guarana, matcha og yerba kompis, pluss et snev av hvit ginseng - kinesisk medisins nøkkel til vital energi. Legg til super-sunn grønn te, zesty sitrus og et krydret hint av ingefær, og du har en energiserende blanding du kan føle deg bra om å drikke.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "22":{
       "name": "Jumpy Monkey",
@@ -174,7 +258,11 @@
       "type 2": "Maté",
       "pris": 80,
       "imageURL": "jumpymate.jpg",
-      "imageURL2": "jumpymate.jpg"
+      "imageURL2": "jumpymate.jpg",
+      "beskrivelse" : "På jakt etter de beste energibyggende teene rundt? Start med denne argentinske matéen. Laget med ferskt rostede peaberry kaffebønner, mandler, hvit sjokolade og cikorie, er vår nutty concoction en internasjonal følelse. Den har nesten ingen kalorier, så fortsett og nyt denne søte godbit så mye du vil! Du kan også prøve Jumpy Monkey som en latte for en rik og nydelig tilfredsstillende overraskelse.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "23":{
       "name": "Chocolate Rocket",
@@ -182,7 +270,11 @@
       "type 2": "Maté",
       "pris": 100,
       "imageURL": "chocolatemate.jpg",
-      "imageURL2": "chocolatemate.jpg"
+      "imageURL2": "chocolatemate.jpg",
+      "beskrivelse" : "Hva er yerba-kompis og hvorfor elsker te-elskere det så mye? Vel, det er ganske enkelt mor til alle energiserende teer. Når du trenger et løft med en fin vri, prøv denne stekte brasilianske kompiseren. En oppløftende blanding av kakao nib, mandler, bringebær og cikoria, vil denne myke, fløyete teen få deg opp og fly på kort tid.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "24":{
       "name": "Organic Sweet Ginger Heat",
@@ -190,7 +282,11 @@
       "type 2": "Green",
       "pris": 120,
       "imageURL": "organic-sweet-ginger-heat.jpg",
-      "imageURL2": "organic-sweet-ginger-heat.jpg"
+      "imageURL2": "organic-sweet-ginger-heat.jpg",
+      "beskrivelse" : "Slå opp varmen med denne ingefæren grønn te-spilleren. Med beroligende, fordøyelsesvennlige ingredienser som ingefær, appelsinskall, lakris og pepparkorn, er det vårt nummer én go-to for å lindre mageproblemer eller ondt i halsen. Med den grønne grønne tebasen er denne søte og krydrede blandingen en ekte multitasker - og det finner fremdeles tid til å smake godt.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "25":{
       "name": "Organic Choco Chaga",
@@ -198,7 +294,11 @@
       "type 2": "Black",
       "pris": 110,
       "imageURL": "organic-choco-chaga.jpg",
-      "imageURL2": "organic-choco-chaga.jpg"
+      "imageURL2": "organic-choco-chaga.jpg",
+      "beskrivelse" : "Med all rensende godhet av Chaga-sopp, er denne avrenerende organiske svart teen med kakao, karob og cikoriarot som den sunneste varm sjokolade noensinne. Det er så bra faktisk, du kommer nok til å ønske å gå tilbake i sekunder. Og hvem kan klandre deg? Den er rik, sjokoladeaktig og 100% skyldfri. Nyt det rett opp eller med et sprut av melk til den ultimate superfood latte.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "26":{
       "name": "Banana Grapefruit",
@@ -206,7 +306,11 @@
       "type 2": "Black",
       "pris": 110,
       "imageURL": "Bananablack.jpg",
-      "imageURL2": "bananakopp.jpg"
+      "imageURL2": "bananakopp.jpg",
+      "beskrivelse" : "Hey, smoothie lovers: Try this day-brightening, fruity black tea blend. With creamy banana and a splash of zesty pink grapefruit, it’s a tropical treat you can sip anytime. Try it on the rocks for a deliciously caffeinated iced tea that’ll leave you invigorated and totally refreshed. It’s bananas!",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "27":{
       "name": "Organic Happy Valley Darjeling",
@@ -214,7 +318,11 @@
       "type 2": "Black",
       "pris": 110,
       "imageURL": "Organicblack.jpg",
-      "imageURL2": "Organicblack.jpg"
+      "imageURL2": "Organicblack.jpg",
+      "beskrivelse" : "Denne vakre andre flush darjeeling er den perfekte måten å bratte noen lykke på. Den trekker sine unike aromaer fra terroren til Indias Happy Valley - en tehage ved foten av Himalaya. Fra sine fruktige notater av moden plomme og aprikos til sin behagelige astringency og delikate blomstermotiver, vil denne premium svart teen gjøre omtrent ethvert te-loverslag.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "28":{
       "name": "Bergamot Kiss",
@@ -222,7 +330,11 @@
       "type 2": "Black",
       "pris": 100,
       "imageURL": "Bergamot.jpg",
-      "imageURL2": "Bergamot.jpg"
+      "imageURL2": "Bergamot.jpg",
+      "beskrivelse" : "Tilbring litt kvalitetstid med denne romantiske svart teen. Den har en dekadent hvit og mørk sjokolade, pluss silkeaktig karamell for en smak av søthet. Drømmende rosebuds for å legge til en flørtende blomstertopp. Og en forfriskende hint av citrusy bergamot for å holde deg på tærne. Rik, chocolaty og delikat rosenrød, det er en vri på Earl Grey verdt å falle for - spesielt når du prøver det som en te latte.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "29":{
       "name": "Organic Chocox Detox",
@@ -230,7 +342,11 @@
       "type 2": "Black",
       "pris": 95,
       "imageURL": "detox.jpg",
-      "imageURL2": "detoxkopp.jpg"
+      "imageURL2": "detoxkopp.jpg",
+      "beskrivelse" : "Med all rensende godhet av Chaga-sopp, er denne avrenerende organiske svart teen med kakao, karob og cikoriarot som den sunneste varm sjokolade noensinne. Det er så bra faktisk, du kommer nok til å ønske å gå tilbake i sekunder. Og hvem kan klandre deg? Den er rik, sjokoladeaktig og 100% skyldfri. Nyt det rett opp eller med et sprut av melk til den ultimate superfood latte.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "30":{
       "name": "Chocolate covered almond",
@@ -238,7 +354,11 @@
       "type 2": "Black",
       "pris": 145,
       "imageURL": "almond.jpg",
-      "imageURL2": "almond.jpg"
+      "imageURL2": "almond.jpg",
+      "beskrivelse" : "Søte, knaske og helt vanedannende, sjokolade mandler er en klassiker av en grunn. Og denne rike og nutty svart teen er like god. Den har kakao, karob og crunchy mandler, pluss et energiserende skudd av stekt yerba mate som legger til en oppvarmende ristet mandelsmak. Denne lille overbærenheten er så god, du vil ikke engang innse at du har gått tilbake i sekunder.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "31":{
       "name": "Organic Vanilla Chai",
@@ -246,7 +366,11 @@
       "type 2": "Black",
       "pris": 130,
       "imageURL": "organicvanillachai.jpg",
-      "imageURL2": "organicvanillachai.jpg"
+      "imageURL2": "organicvanillachai.jpg",
+      "beskrivelse" : "For de kjølige dagene, få det koselige med denne rike og krydret vaniljechai teen. Kombinasjonen av organisk svart te og fordøyelseskjærende krydder som ingefær, kanel og lakrisrot er som ren komfort i en kopp. Men hvis du spør oss, er det den søte kremete virvelvirvel som gjør denne latteverdige blandingen til en ekte vinner. Prøv det med melk og sukker for en mageoppvarming som vil ha deg som ønsker snø.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     },
     "32":{
       "name": "Pumpkin Chai",
@@ -254,7 +378,11 @@
       "type 2": "Black",
       "pris": 150,
       "imageURL": "chai-pumpkin.jpg",
-      "imageURL2": "chai-pumpkin.jpg"
+      "imageURL2": "chai-pumpkin.jpg",
+      "beskrivelse" : "La oss innse det, det beste med fall er retur av gresskar krydret lattes. Og denne rike, mørke teen er den perfekte måten å sparke sesongen. Det har all varmen av kanel og nelliker, i tillegg til søttheten av karamell og gresskar godteri. For en ekte høstbehandler, fyll den opp med dampet melk og rør i en skje med brunt sukker. Det vil få deg til å ønske det var høst året rundt.",
+      "pose" : "100g",
+      "pose 2" : "200g",
+      "pose 3" : "300g"
     }
   }
 }

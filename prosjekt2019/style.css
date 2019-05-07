@@ -15,8 +15,12 @@ header{
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-p{
-  text-align: center;
+
+
+
+.tekst{
+  text-align: white;
+  font-family: Arial;
 }
 
 .navbar {
@@ -162,6 +166,21 @@ body {
 .handle{
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+#secprodukt{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.valgtProdukt{
+  grid-column: span 2;
+}
+.valgtProdukt img{
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+.valgtProdukt p{
+
 }
 
 @media(max-width:1400px){

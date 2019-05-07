@@ -226,10 +226,9 @@
         main.innerHTML +=`
             <article class="te">
               <h1>${te.name}</h1>
-              <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'onmouseover="this.src='bilder/${te["imageURL2"]}'" onmouseout="this.src='bilder/${te["imageURL"]}'"/>
+              <a href="produkt.html?key=${key}&parent=${parent}"><img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'onmouseover="this.src='bilder/${te["imageURL2"]}'" onmouseout="this.src='bilder/${te["imageURL"]}'"/></a>
               <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
               <p>Pris: ${te.pris}</p>
-              <a href="produkt.html?key=${key}&parent=${parent}">Les Mer</a>
             </article>
         `;
       }
@@ -241,10 +240,9 @@
         main.innerHTML =`
             <article class="te">
               <h1>${te.name}</h1>
-              <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'>
+              <a href="produkt.html?key=${key}&parent=${parent}"><img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'></a>
               <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
               <p>Pris: ${te.pris}</p>
-              <a href="produkt.html?key=${key}&parent=${parent}">Les Mer</a>
             </article>
         ` + main.innerHTML;
       }

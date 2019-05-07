@@ -23,6 +23,62 @@
     <a href="index.html">
       <img src="bilder/te.png" alt="te logo" class="center">
     </a>
+
+    <header>
+      <section>
+          <div class="navbar">
+              <div class="dropdown">
+                <button class="dropbtn" type="button" name="button" onclick="visAlle()">Vis alle typer
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a onclick="hoyLav()">Høy-lav</a>
+                  <a onclick="lavHoy()">Lav-Høy</a>
+                </div>
+              </div>
+
+            <div class="dropdown">
+              <div id="myDropdown2" class="dropdown-content">
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Sorter etter type
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a onclick="visMatcha()">Matcha</a>
+                <a onclick="visHebral()">Hebral</a>
+                <a onclick="visGreen()">Green</a>
+                <a onclick="visBlack()">Black</a>
+                <a onclick="visWhite()">White</a>
+                <a onclick="visMaté()">Maté</a>
+              </div>
+            </div>
+
+
+            <div class="dropdown">
+              <button type="onclick" class="dropbtn" name="onclick" onclick="Vissortering()">Sorter etter produkt
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a onclick="visBestsellers()">Bestsellers</a>
+                <a onclick="visIste()">Iste</a>
+                <a onclick="visChai()">Chai</a>
+                <a onclick="visOrganic()">Organic</a>
+              </div>
+            </div>
+
+      </section>
+      <section>
+
+      </section>
+      <section>
+        <a href="handlekurv.html">
+          <img  src="bilder/handlekurv.png" alt="Handlekurv" >
+        </a>
+      </section>
+
+    </header>
     <header>
 
     </header>
@@ -32,22 +88,119 @@
     </main>
 
     <script type="text/javascript">
-      const main = document.querySelector("main");
-      const secprodukt = document.querySelector("#secprodukt");
+    const main = document.querySelector("main");
+    const bilder = document.querySelector("#bilder");
 
-      let url_string = window.location.href;
-      let url = new URL(url_string);
-      let parent = url.searchParams.get("parent");
-      let key = url.searchParams.get("key");
-
-      console.log("te/"+key);
-
-      const db = firebase.database();
-      const produkt = db.ref("te/"+key);
-
-      produkt.on("value", genererHTML);
+    const dg = firebase.database();
+    const te = dg.ref("te");
+    const secprodukt = document.querySelector("#secprodukt");
 
 
+    let url_string = window.location.href;
+    let url = new URL(url_string);
+    let parent = url.searchParams.get("parent");
+    let key = url.searchParams.get("key");
+
+    console.log("te/"+key);
+
+    const dl = firebase.database();
+    const produkt = dl.ref("te/"+key);
+
+    produkt.on("value", genererProduktHTML);
+
+
+
+
+    function visAlle(){
+      main.innerHTML = ``;
+      te.on("child_added",genererHTML);
+    }
+
+    function hoyLav(){
+      main.innerHTML = ``;
+      te.orderByChild("pris").on("child_added",genererHTMLSnudd);
+    }
+
+    function lavHoy(){
+      main.innerHTML = ``;
+      te.orderByChild("pris").on("child_added",genererHTML);
+    }
+
+    function visMatcha(){
+      main.innerHTML = ``
+      te.orderByChild("type 2").equalTo("Matcha").on("child_added",genererHTML);
+    }
+
+    function visHebral(){
+      main.innerHTML = ``
+      te.orderByChild("type 2").equalTo("Hebral").on("child_added",genererHTML);
+    }
+
+    function visGreen(){
+      main.innerHTML = ``
+      te.orderByChild("type 2").equalTo("Green").on("child_added",genererHTML);
+    }
+
+    function visBlack(){
+      main.innerHTML = ``
+      te.orderByChild("type 2").equalTo("Black").on("child_added",genererHTML);
+    }
+
+    function visWhite(){
+      main.innerHTML = ``
+      te.orderByChild("type 2").equalTo("White").on("child_added",genererHTML);
+    }
+
+    function visMaté(){
+      main.innerHTML = ``
+      te.orderByChild("type 2").equalTo("Maté").on("child_added",genererHTML);
+    }
+
+    function visBestsellers(){
+      main.innerHTML = ``
+      te.orderByChild("type 1").equalTo("Bestsellers").on("child_added",genererHTML);
+    }
+
+    function visIste(){
+      main.innerHTML = ``
+      te.orderByChild("type 1").equalTo("Iste").on("child_added",genererHTML);
+    }
+
+    function visChai(){
+      main.innerHTML = ``
+      te.orderByChild("type 1").equalTo("Chai").on("child_added",genererHTML);
+    }
+
+    function visOrganic(){
+      main.innerHTML = ``
+      te.orderByChild("type 1").equalTo("Organic").on("child_added",genererHTML);
+    }
+
+
+    function genererProduktHTML(snapshot){
+      let key = snapshot.key;
+      let te = snapshot.val();
+      let parent = snapshot.ref.parent.key;
+      console.log(te);
+      main.innerHTML +=`
+          <article class="valgtProdukt">
+            <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'onmouseover="this.src='bilder/${te["imageURL2"]}'" onmouseout="this.src='bilder/${te["imageURL"]}'"/>
+          </article>
+
+          <article class="valgtProdukt">
+            <h1>${te.name}</h1>
+            <p><b>Type te:</b> ${te["type 1"]} <b>-</b> ${te["type 2"]}</p>
+            <p><b>Pris per 100 g:</b> ${te.pris} kr</p>
+            <select>
+              <option>velg mengde</option>
+              <option>${te["pose"]}</option>
+              <option>${te["pose 2"]}</option>
+              <option>${te["pose 3"]}</option>
+            </select>
+            <p>${te.beskrivelse}</p>
+          </article>
+      `;
+    }
 
       function genererHTML(snapshot){
         let key = snapshot.key;
@@ -57,7 +210,7 @@
         main.innerHTML +=`
             <article class="te">
               <h1>${te.name}</h1>
-              <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'onmouseover="this.src='bilder/${te["imageURL2"]}'" onmouseout="this.src='bilder/${te["imageURL"]}'"/>
+              <a href="produkt.html?key=${key}&parent=${parent}"><img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'onmouseover="this.src='bilder/${te["imageURL2"]}'" onmouseout="this.src='bilder/${te["imageURL"]}'"/></a>
               <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
               <p>Pris: ${te.pris}</p>
             </article>
@@ -71,7 +224,7 @@
         main.innerHTML =`
             <article class="te">
               <h1>${te.name}</h1>
-              <img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'>
+              <a href="produkt.html?key=${key}&parent=${parent}"><img src='bilder/${te["imageURL"]}' alt='bilder/${te["imageURL"]}'onmouseover="this.src='bilder/${te["imageURL2"]}'" onmouseout="this.src='bilder/${te["imageURL"]}'"/></a>
               <p>Type te: ${te["type 1"]} - ${te["type 2"]}</p>
               <p>Pris: ${te.pris}</p>
             </article>
